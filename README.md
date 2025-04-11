@@ -1,4 +1,4 @@
-# 🐾 PetPals – eCommerce Pet Shop
+# 🐾 PetShop – eCommerce Pet Shop
 
 A modern full-stack web application for pet lovers to shop pet products and book veterinary appointments. Built using **React**, **Node.js**, and **MongoDB**, PetPals offers a seamless user experience with secure authentication, a dynamic cart system, product browsing, and appointment scheduling for pets.
 
