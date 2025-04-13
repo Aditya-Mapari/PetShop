@@ -8,21 +8,28 @@ app.use(express.json());
 
 // Allow requests from all origins
 app.use(cors());
-
+//password is  : o1JRhMpXbUyezPAZ
+//user name is  : adityamapari13
+// const link="mongodb+srv://adityamapari13:o1JRhMpXbUyezPAZ@petshopcluster.ujphkqe.mongodb.net/petshop?retryWrites=true&w=majority&appName=petshopcluster"
 // Serve static files
 app.use('/images', express.static(path.join(__dirname, 'public/images'))); // Serve static images
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/petshop', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+// mongoose.connect('mongodb://localhost:27017/petshop', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// })
+
+
+
+const link = "mongodb+srv://adityamapari13:o1JRhMpXbUyezPAZ@petshopcluster.ujphkqe.mongodb.net/petshop?retryWrites=true&w=majority&appName=petshopcluster";
+
+mongoose.connect(link)
   .then(() => console.log('Connected to MongoDB'))
   .catch((error) => {
     console.error('Error connecting to MongoDB:', error);
-    process.exit(1); // Exit the application if the connection fails
+    process.exit(1);
   });
-
 // Routes
 const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/productRoutes'); // Import productRoutes
