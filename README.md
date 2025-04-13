@@ -14,7 +14,7 @@ A modern full-stack web application for pet lovers to shop pet products and book
 
 ## 📸 Screenshot
 
-![Chat UI](backend/screenshot/login.png)
+
 ![Chat UI](backend/screenshot/home.png)
 
 
